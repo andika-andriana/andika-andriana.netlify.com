@@ -20,6 +20,13 @@ const Headers = () => (
           >
             <Icon name="globe" style={{ color: "black", fontSize: 10 }} />
             <u>https://andika-andriana.github.io</u>&nbsp;|&nbsp;
+          </a>
+          <a
+            href="https://andika-andriana.netlify.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            style={{ color: "black" }}
+          >
             <u>https://andika-andriana.netlify.com</u>
           </a>
         </Header>
