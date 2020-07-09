@@ -25,6 +25,7 @@ const Tentang = () => {
         target="_blank"
       >
         <Button
+          style={{width: 200}}
           primary
           animated="vertical"
           onClick={() => setAction("/docs/CV-AndikaAndriana.pdf")}
@@ -35,6 +36,7 @@ const Tentang = () => {
           <Button.Content visible>Download CV</Button.Content>
         </Button>
         <Button
+          style={{width: 200}}
           color="green"
           animated="vertical"
           onClick={() => setAction("/docs/Portofolio-AndikaAndriana.pdf")}
@@ -45,6 +47,7 @@ const Tentang = () => {
           <Button.Content visible>Download Portofolio</Button.Content>
         </Button>
         <Button
+          style={{width: 200}}
           secondary
           animated="vertical"
           onClick={() => setAction("/docs/Sertifikat-AndikaAndriana.pdf")}
