@@ -6,11 +6,12 @@ import {
   Sidebar,
   Image,
   Tab,
-  Label,
   Container,
   Button,
   Popup,
-  Divider
+  Divider,
+  Dimmer,
+  Loader
 } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 
@@ -29,10 +30,23 @@ export default class Pages extends Component {
     super(props);
     this.state = {
       visible: false,
-      dimming: false
+      dimming: false,
+      isLoading : true,
     };
     this.opensidebar = this.opensidebar.bind(this);
     this.hidesidebar = this.hidesidebar.bind(this);
+  }
+
+  
+  componentDidMount() {
+    this.timerHandle = setTimeout(() => this.setState({ isLoading: false }), 1000);
+  }
+
+  componentWillUnmount(){
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
   }
 
   opensidebar() {
@@ -46,94 +60,84 @@ export default class Pages extends Component {
   }
 
   render() {
-    const panes = [
-      {
-        menuItem: (
-          <Menu.Item key="Portofolio">
-            <Icon name="code" />
-            Portofolio
-            <Label color="green">6</Label>
-          </Menu.Item>
-        ),
-        render: () => (
-          <Tab.Pane attached={false} style={{ backgroundColor: "#fafafa" }}>
-            <Portofolios />
-          </Tab.Pane>
-        )
-      },
-      {
-        menuItem: (
-          <Menu.Item key="Catatan">
-            <Icon name="file pdf outline" />
-            Catatan
-            <Label color="green">8</Label>
-          </Menu.Item>
-        ),
-        render: () => (
-          <Tab.Pane attached={false} style={{ backgroundColor: "#fafafa" }}>
-            <Catatans />
-          </Tab.Pane>
-        )
-      },
-      {
-        menuItem: (
-          <Menu.Item key="Tentang">
-            <Popup
-              content="Munculkan data saya pada sidebar"
-              position="right center"
-              trigger={
-                <Button basic animated onClick={this.opensidebar}>
-                  <Button.Content visible>Tentang Saya</Button.Content>
-                  <Button.Content hidden>
-                    <Icon name="arrow right" />
-                  </Button.Content>
-                </Button>
-              }
+    if(this.state.isLoading){
+      return(
+        <Dimmer active>
+          <Loader size='massive'/>
+        </Dimmer>
+      )
+    }else{
+      const panes = [
+        {
+          menuItem: { key: 'Portofolio', icon: 'fork', content: 'Portofolio' },
+          render: () => (
+            <Tab.Pane>
+              <Portofolios />
+            </Tab.Pane>
+          )
+        },
+        {
+          menuItem: { key: 'Catatan', icon: 'book', content: 'Catatan' },
+          render: () => (
+            <Tab.Pane>
+              <Catatans />
+            </Tab.Pane>
+          )
+        },
+        {
+          menuItem:(
+            <Menu.Item key="Tentang" onClick={this.opensidebar}>
+              <Popup
+                inverted
+                position="bottom center"
+                content="Munculkan data saya pada sidebar"
+                trigger={
+                  <Icon name="user"/>
+                }
+              />Tentang
+            </Menu.Item>
+          ),
+          render: () => (
+            <Tab.Pane>
+              <Tentang />
+            </Tab.Pane>
+          )
+        }
+      ];
+      return (
+        <Container fluid textAlign='center'>
+          <Sidebar
+            as={Menu}
+            animation="push"
+            direction="left"
+            visible={this.state.visible}
+            inverted
+            vertical
+          >
+            <Image
+              src="/images/myava.jpg"
+              circular
+              size="small"
+              centered={true}
+              style={{ marginTop: 20 }}
             />
-          </Menu.Item>
-        ),
-        render: () => (
-          <Tab.Pane attached={false} style={{ backgroundColor: "#fafafa" }}>
-            <Tentang />
-          </Tab.Pane>
-        )
-      }
-    ];
-    return (
-      <Container fluid>
-        <Sidebar
-          as={Menu}
-          animation="push"
-          direction="left"
-          visible={this.state.visible}
-          inverted
-          vertical
-        >
-          <Image
-            src="/images/myava.jpg"
-            circular
-            size="small"
-            centered={true}
-            style={{ marginTop: 20 }}
-          />
-          <Bios />
-          <Divider inverted horizontal>
-            <Button basic inverted animated onClick={this.hidesidebar}>
-              <Button.Content visible>Close</Button.Content>
-              <Button.Content hidden>
-                <Icon name="arrow left" />
-              </Button.Content>
-            </Button>
-          </Divider>
-        </Sidebar>
-        <Sidebar.Pusher>
-          <Headers />
-          <Container fluid>
-            <Tab menu={{ secondary: true, pointing: true }} panes={panes} />
-          </Container>
-          <Footers />
-        </Sidebar.Pusher>
-      </Container>
-    );
+            <Bios />
+            <Divider inverted horizontal>
+              <Button basic inverted animated onClick={this.hidesidebar}>
+                <Button.Content visible>Close</Button.Content>
+                <Button.Content hidden>
+                  <Icon name="arrow left" />
+                </Button.Content>
+              </Button>
+            </Divider>
+          </Sidebar>
+          <Sidebar.Pusher>
+            <Headers />
+              <Tab menu={{ pointing:true, secondary:true }} panes={panes}/>
+            <Footers />
+          </Sidebar.Pusher>
+        </Container>
+      );
+    }
   }
 }

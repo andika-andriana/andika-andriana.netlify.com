@@ -1,10 +1,10 @@
 import React from "react";
 import Iframe from "react-iframe";
-import { Container, Label } from "semantic-ui-react";
+import { Segment, Label } from "semantic-ui-react";
 
 const Catatans = () => {
   return (
-    <Container fluid>
+    <Segment>
       <Label attached="bottom" color="green">
         Iframe:&nbsp;
         <a
@@ -21,7 +21,7 @@ const Catatans = () => {
         height="800px"
         frameBorder="0"
       />
-    </Container>
+    </Segment>
   );
 };
 
