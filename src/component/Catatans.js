@@ -1,10 +1,11 @@
 import React from "react";
-import Iframe from "react-iframe";
 import { Segment, Label } from "semantic-ui-react";
+import IframeC from './IframeC';
 
 const Catatans = () => {
   return (
     <Segment>
+      <IframeC title="Andriana Notes" src="https://andriana-notes.netlify.com/" height="100%" width="100%"/>
       <Label attached="bottom" color="green">
         Iframe:&nbsp;
         <a
@@ -15,12 +16,6 @@ const Catatans = () => {
           https://andriana-notes.netlify.com/
         </a>
       </Label>
-      <Iframe
-        url="https://andriana-notes.netlify.com/"
-        width="100%"
-        height="800px"
-        frameBorder="0"
-      />
     </Segment>
   );
 };
