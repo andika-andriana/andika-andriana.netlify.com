@@ -46,6 +46,42 @@ class ReactNatives extends Component {
               </p>
               <Divider horizontal style={{ marginTop: 50 }}>
                 <Header as="h4">
+                  <Icon name="video" />
+                  Demo
+                </Header>
+              </Divider>
+              <List>
+                <List.Item style={{ margin: 20 }}>
+                  <List.Icon name="home" />
+                  <List.Content>
+                    <List.Header>Home Page</List.Header>
+                    <Image src="https://raw.githubusercontent.com/andika-andriana/React-Native---Mobile-App-Restoran-Dengan-Open-API-Zomato/master/file/Home.gif" />
+                  </List.Content>
+                </List.Item>
+                <List.Item style={{ margin: 20 }}>
+                  <List.Icon name="food" />
+                  <List.Content>
+                    <List.Header>Halaman Makanan</List.Header>
+                    <Image src="https://raw.githubusercontent.com/andika-andriana/React-Native---Mobile-App-Restoran-Dengan-Open-API-Zomato/master/file/Makanan.gif" />
+                  </List.Content>
+                </List.Item>
+                <List.Item style={{ margin: 20 }}>
+                  <List.Icon name="building outline" />
+                  <List.Content>
+                    <List.Header>Halaman Kota</List.Header>
+                    <Image src="https://raw.githubusercontent.com/andika-andriana/React-Native---Mobile-App-Restoran-Dengan-Open-API-Zomato/master/file/Kota.gif" />
+                  </List.Content>
+                </List.Item>
+                <List.Item style={{ margin: 20 }}>
+                  <List.Icon name="grid layout" />
+                  <List.Content>
+                    <List.Header>Halaman Kategori</List.Header>
+                    <Image src="https://raw.githubusercontent.com/andika-andriana/React-Native---Mobile-App-Restoran-Dengan-Open-API-Zomato/master/file/Kategori.gif" />
+                  </List.Content>
+                </List.Item>
+              </List>
+              <Divider horizontal style={{ marginTop: 50 }}>
+                <Header as="h4">
                   <Icon name="mobile alternate" />
                   Spesifikasi
                 </Header>
@@ -101,7 +137,7 @@ class ReactNatives extends Component {
                   Installasi
                 </Header>
               </Divider>
-              <List bulleted>
+              <List bulleted style={{marginBottom:50}}>
                 <List.Item>Download atau clone repository</List.Item>
                 <List.Item>Extract folder</List.Item>
                 <List.Item>
@@ -119,42 +155,6 @@ class ReactNatives extends Component {
                 <List.Item>
                   (Opsional) Jalankan pada web:&nbsp;
                   <code>yarn start:web</code>
-                </List.Item>
-              </List>
-              <Divider horizontal style={{ marginTop: 50 }}>
-                <Header as="h4">
-                  <Icon name="video" />
-                  Demo
-                </Header>
-              </Divider>
-              <List>
-                <List.Item style={{ margin: 20 }}>
-                  <List.Icon name="home" />
-                  <List.Content>
-                    <List.Header>Home Page</List.Header>
-                    <Image src="https://raw.githubusercontent.com/andika-andriana/React-Native---Mobile-App-Restoran-Dengan-Open-API-Zomato/master/file/Home.gif" />
-                  </List.Content>
-                </List.Item>
-                <List.Item style={{ margin: 20 }}>
-                  <List.Icon name="food" />
-                  <List.Content>
-                    <List.Header>Halaman Makanan</List.Header>
-                    <Image src="https://raw.githubusercontent.com/andika-andriana/React-Native---Mobile-App-Restoran-Dengan-Open-API-Zomato/master/file/Makanan.gif" />
-                  </List.Content>
-                </List.Item>
-                <List.Item style={{ margin: 20 }}>
-                  <List.Icon name="building outline" />
-                  <List.Content>
-                    <List.Header>Halaman Kota</List.Header>
-                    <Image src="https://raw.githubusercontent.com/andika-andriana/React-Native---Mobile-App-Restoran-Dengan-Open-API-Zomato/master/file/Kota.gif" />
-                  </List.Content>
-                </List.Item>
-                <List.Item style={{ margin: 20 }}>
-                  <List.Icon name="grid layout" />
-                  <List.Content>
-                    <List.Header>Halaman Kategori</List.Header>
-                    <Image src="https://raw.githubusercontent.com/andika-andriana/React-Native---Mobile-App-Restoran-Dengan-Open-API-Zomato/master/file/Kategori.gif" />
-                  </List.Content>
                 </List.Item>
               </List>
             </Modal.Description>

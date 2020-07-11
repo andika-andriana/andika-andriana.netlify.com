@@ -47,53 +47,6 @@ class ReactJS extends Component {
               </p>
               <Divider horizontal style={{ marginTop: 50 }}>
                 <Header as="h4">
-                  <Icon name="cogs" />
-                  Dependencies
-                </Header>
-              </Divider>
-              <List bulleted>
-                <List.Item>auth0-js : ^9.12.1,</List.Item>
-                <List.Item>axios : ^0.19.1,</List.Item>
-                <List.Item>react : ^16.12.0,</List.Item>
-                <List.Item>react-dom : ^16.12.0,</List.Item>
-                <List.Item>react-redux : ^7.1.3,</List.Item>
-                <List.Item>react-responsive-carousel : ^3.1.51,</List.Item>
-                <List.Item>react-router-dom : ^5.1.2,</List.Item>
-                <List.Item>react-scripts : 3.3.0,</List.Item>
-                <List.Item>redux : ^4.0.5,</List.Item>
-                <List.Item>semantic-ui-css : ^2.4.1,</List.Item>
-                <List.Item>semantic-ui-react : ^0.88.2</List.Item>
-              </List>
-              <Divider horizontal style={{ marginTop: 50 }}>
-                <Header as="h4">
-                  <Icon name="file archive" />
-                  Installasi
-                </Header>
-              </Divider>
-              <List bulleted>
-                <List.Item>Download atau clone repository</List.Item>
-                <List.Item>Extract folder</List.Item>
-                <List.Item>
-                  Buat Akun Auth0 (Opsional) Jika ingin menggunakan
-                  autentifikasi
-                </List.Item>
-                <List.Item>
-                  Ubah data callback di root:src/Auth/auth0-variables.js dengan
-                  data pada Auth0 yang didaftarkan
-                </List.Item>
-                <List.Item>
-                  Install dependencies :&nbsp;
-                  <code>npm install</code>
-                  &nbsp;atau&nbsp;
-                  <code>yarn install</code>
-                </List.Item>
-                <List.Item>
-                  Jalankan aplikasi :&nbsp;
-                  <code>npm start</code>
-                </List.Item>
-              </List>
-              <Divider horizontal style={{ marginTop: 50 }}>
-                <Header as="h4">
                   <Icon name="video" />
                   Demo
                 </Header>
@@ -122,6 +75,53 @@ class ReactJS extends Component {
                       playing
                     />
                   </List.Content>
+                </List.Item>
+              </List>
+              <Divider horizontal style={{ marginTop: 50 }}>
+                <Header as="h4">
+                  <Icon name="cogs" />
+                  Dependencies
+                </Header>
+              </Divider>
+              <List bulleted>
+                <List.Item>auth0-js : ^9.12.1,</List.Item>
+                <List.Item>axios : ^0.19.1,</List.Item>
+                <List.Item>react : ^16.12.0,</List.Item>
+                <List.Item>react-dom : ^16.12.0,</List.Item>
+                <List.Item>react-redux : ^7.1.3,</List.Item>
+                <List.Item>react-responsive-carousel : ^3.1.51,</List.Item>
+                <List.Item>react-router-dom : ^5.1.2,</List.Item>
+                <List.Item>react-scripts : 3.3.0,</List.Item>
+                <List.Item>redux : ^4.0.5,</List.Item>
+                <List.Item>semantic-ui-css : ^2.4.1,</List.Item>
+                <List.Item>semantic-ui-react : ^0.88.2</List.Item>
+              </List>
+              <Divider horizontal style={{ marginTop: 50 }}>
+                <Header as="h4">
+                  <Icon name="file archive" />
+                  Installasi
+                </Header>
+              </Divider>
+              <List bulleted style={{marginBottom:50}}>
+                <List.Item>Download atau clone repository</List.Item>
+                <List.Item>Extract folder</List.Item>
+                <List.Item>
+                  Buat Akun Auth0 (Opsional) Jika ingin menggunakan
+                  autentifikasi
+                </List.Item>
+                <List.Item>
+                  Ubah data callback di root:src/Auth/auth0-variables.js dengan
+                  data pada Auth0 yang didaftarkan
+                </List.Item>
+                <List.Item>
+                  Install dependencies :&nbsp;
+                  <code>npm install</code>
+                  &nbsp;atau&nbsp;
+                  <code>yarn install</code>
+                </List.Item>
+                <List.Item>
+                  Jalankan aplikasi :&nbsp;
+                  <code>npm start</code>
                 </List.Item>
               </List>
             </Modal.Description>

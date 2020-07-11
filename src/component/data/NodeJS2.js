@@ -45,49 +45,6 @@ class NodeJS2 extends Component {
               </p>
               <Divider horizontal style={{ marginTop: 50 }}>
                 <Header as="h4">
-                  <Icon name="cogs" />
-                  Dependencies
-                </Header>
-              </Divider>
-              <List bulleted>
-                <List.Item>bcrypt: ^3.0.7,</List.Item>
-                <List.Item>body-parser: ^1.19.0,</List.Item>
-                <List.Item>connect-flash: ^0.1.1,</List.Item>
-                <List.Item>cookie-parser: ~1.4.4,</List.Item>
-                <List.Item>debug: ~2.6.9,</List.Item>
-                <List.Item>ejs: ~2.6.1,</List.Item>
-                <List.Item>express: ~4.16.1,</List.Item>
-                <List.Item>express-ejs-layouts: ^2.5.0,</List.Item>
-                <List.Item>express-session: ^1.17.0,</List.Item>
-                <List.Item>http-errors: ~1.6.3,</List.Item>
-                <List.Item>moment: ^2.24.0,</List.Item>
-                <List.Item>mongoose: ^5.8.7,</List.Item>
-                <List.Item>morgan: ~1.9.1,</List.Item>
-                <List.Item>passport: ^0.4.1,</List.Item>
-                <List.Item>passport-local: ^1.0.0</List.Item>
-              </List>
-              <Divider horizontal style={{ marginTop: 50 }}>
-                <Header as="h4">
-                  <Icon name="file archive" />
-                  Installasi
-                </Header>
-              </Divider>
-              <List bulleted>
-                <List.Item>Download atau clone repository</List.Item>
-                <List.Item>Extract folder</List.Item>
-                <List.Item>
-                  Install dependencies :&nbsp;
-                  <code>npm install</code>
-                  &nbsp;atau&nbsp;
-                  <code>yarn install</code>
-                </List.Item>
-                <List.Item>
-                  Jalankan aplikasi :&nbsp;
-                  <code>npm start</code>
-                </List.Item>
-              </List>
-              <Divider horizontal style={{ marginTop: 50 }}>
-                <Header as="h4">
                   <Icon name="video" />
                   Demo
                 </Header>
@@ -130,6 +87,49 @@ class NodeJS2 extends Component {
                       playing
                     />
                   </List.Content>
+                </List.Item>
+              </List>
+              <Divider horizontal style={{ marginTop: 50 }}>
+                <Header as="h4">
+                  <Icon name="cogs" />
+                  Dependencies
+                </Header>
+              </Divider>
+              <List bulleted>
+                <List.Item>bcrypt: ^3.0.7,</List.Item>
+                <List.Item>body-parser: ^1.19.0,</List.Item>
+                <List.Item>connect-flash: ^0.1.1,</List.Item>
+                <List.Item>cookie-parser: ~1.4.4,</List.Item>
+                <List.Item>debug: ~2.6.9,</List.Item>
+                <List.Item>ejs: ~2.6.1,</List.Item>
+                <List.Item>express: ~4.16.1,</List.Item>
+                <List.Item>express-ejs-layouts: ^2.5.0,</List.Item>
+                <List.Item>express-session: ^1.17.0,</List.Item>
+                <List.Item>http-errors: ~1.6.3,</List.Item>
+                <List.Item>moment: ^2.24.0,</List.Item>
+                <List.Item>mongoose: ^5.8.7,</List.Item>
+                <List.Item>morgan: ~1.9.1,</List.Item>
+                <List.Item>passport: ^0.4.1,</List.Item>
+                <List.Item>passport-local: ^1.0.0</List.Item>
+              </List>
+              <Divider horizontal style={{ marginTop: 50 }}>
+                <Header as="h4">
+                  <Icon name="file archive" />
+                  Installasi
+                </Header>
+              </Divider>
+              <List bulleted style={{marginBottom:50}}>
+                <List.Item>Download atau clone repository</List.Item>
+                <List.Item>Extract folder</List.Item>
+                <List.Item>
+                  Install dependencies :&nbsp;
+                  <code>npm install</code>
+                  &nbsp;atau&nbsp;
+                  <code>yarn install</code>
+                </List.Item>
+                <List.Item>
+                  Jalankan aplikasi :&nbsp;
+                  <code>npm start</code>
                 </List.Item>
               </List>
             </Modal.Description>

@@ -9,9 +9,8 @@ import {
   List,
   Image
 } from "semantic-ui-react";
-import ReactPlayer from "react-player";
 
-class NodeJS1 extends Component {
+class ReactNatives2 extends Component {
   state = { open: false };
   closeConfigShow = (closeOnEscape, closeOnDimmerClick) => () => {
     this.setState({ closeOnEscape, closeOnDimmerClick, open: true });
@@ -37,13 +36,12 @@ class NodeJS1 extends Component {
           dimmer="blurring"
         >
           <Modal.Header>
-            Node JS - Payment Web Integration Dengan Paystack
+            React Native - Mini Tracker Mobile Apps
           </Modal.Header>
           <Modal.Content image scrolling>
             <Modal.Description>
               <p>
-                Website Payment terintegrasi dengan Paystack dan database
-                MongoDB.
+                Real-time Mini Tracker App dengan websocket stompJS, rn-maps dan redux
               </p>
               <Divider horizontal style={{ marginTop: 50 }}>
                 <Header as="h4">
@@ -52,41 +50,50 @@ class NodeJS1 extends Component {
                 </Header>
               </Divider>
               <List>
-                <List.Item>
-                  <List.Icon name="cc visa" />
+                <List.Item style={{ margin: 20 }}>
+                  <List.Icon name="pin" />
                   <List.Content>
-                    <List.Header>Test Donation Payment</List.Header>
-                    <ReactPlayer
-                      url="https://github.com/andika-andriana/Node-JS---Payment-Web-Integration-Dengan-Paystack/blob/master/files/Demo_App.mp4?raw=true"
-                      controls
-                      light
-                      playing
-                    />
+                    <List.Header>ScreenRecord:</List.Header>
+                    <Image src="https://raw.githubusercontent.com/andika-andriana/bcak-mini-tracker/master/file/mini-tracker.gif" />
                   </List.Content>
                 </List.Item>
               </List>
-              <Divider horizontal style={{ marginTop: 50 }}>
-                <Header as="h4">
-                  <Icon name="payment" />
-                  Email Receipt
-                </Header>
-              </Divider>
-              <Image src="images/paystack_receipt.png" size="huge"/>
               <Divider horizontal style={{ marginTop: 50 }}>
                 <Header as="h4">
                   <Icon name="cogs" />
                   Dependencies
                 </Header>
               </Divider>
-              <Header as="h5">Vendor</Header>
-              <Image src="images/2_wappalyzer.png" />
-              <Header as="h5">Package.json</Header>
+              <Header as="h5">Dependencies</Header>
               <List bulleted>
-                <List.Item>body-parser → ^1.18.3</List.Item>
-                <List.Item>express → ^4.16.4</List.Item>
-                <List.Item>mongoose → ^5.3.14</List.Item>
-                <List.Item>pug → ^2.0.3</List.Item>
-                <List.Item>request → ^2.88.0</List.Item>
+                <List.Item>@react-native-community/geolocation: ^2.0.2</List.Item>
+                <List.Item>react: 16.9.0</List.Item>
+                <List.Item>react-native: ^0.63.0</List.Item>
+                <List.Item>react-native-animatable: ^1.3.3</List.Item>
+                <List.Item>react-native-gesture-handler: ^1.5.5</List.Item>
+                <List.Item>react-native-maps: ^0.26.1</List.Item>
+                <List.Item>react-native-reanimated: ^1.7.0</List.Item>
+                <List.Item>react-native-router-flux: ^4.2.0</List.Item>
+                <List.Item>react-native-screens: ^2.0.0-alpha.33</List.Item>
+                <List.Item>react-redux: ^7.1.3</List.Item>
+                <List.Item>react-stomp: ^4.3.0</List.Item>
+                <List.Item>redux: ^4.0.5</List.Item>
+                <List.Item>redux-form: ^8.3.0</List.Item>
+                <List.Item>redux-persist: ^6.0.0</List.Item>
+                <List.Item>redux-thunk: ^2.3.0</List.Item>
+                <List.Item>typescript: ^3.7.5</List.Item>
+              </List>
+              <Header as="h5">Devdependencies</Header>
+              <List bulleted>
+              <List.Item>@babel/core: 7.8.4</List.Item>
+              <List.Item>@babel/runtime: 7.8.4</List.Item>
+              <List.Item>@react-native-community/eslint-config: 0.0.5</List.Item>
+              <List.Item>babel-jest: 24.9.0</List.Item>
+              <List.Item>eslint: ^6.8.0</List.Item>
+              <List.Item>jest: 24.9.0</List.Item>
+              <List.Item>jetifier: ^1.6.5</List.Item>
+              <List.Item>metro-react-native-babel-preset: 0.56.4</List.Item>
+              <List.Item>react-test-renderer: 16.9.0</List.Item>
               </List>
               <Divider horizontal style={{ marginTop: 50 }}>
                 <Header as="h4">
@@ -97,16 +104,21 @@ class NodeJS1 extends Component {
               <List bulleted style={{marginBottom: 50}}>
                 <List.Item>Download atau clone repository</List.Item>
                 <List.Item>Extract folder</List.Item>
-                <List.Item>Membuat akun paystack</List.Item>
                 <List.Item>
-                  Copy dan update the secret key pada config/paystack.js
+                  Install dependencies:&nbsp;
+                  <code>npm install</code>
+                  &nbsp;atau&nbsp;
+                  <code>yarn install</code>
                 </List.Item>
                 <List.Item>
-                  Install dependencies. Jalankan kode: <code>npm install</code>
-                  &nbsp;pada folder root.
+                  Jalankan pada emulator:&nbsp;
+                  <code>yarn android</code>
+                  &nbsp; atau&nbsp;
+                  <code>yarn ios</code>
                 </List.Item>
                 <List.Item>
-                  Jalankan Aplikasi <code>node app</code>
+                  (Opsional) Jalankan pada web:&nbsp;
+                  <code>yarn start:web</code>
                 </List.Item>
               </List>
             </Modal.Description>
@@ -121,7 +133,7 @@ class NodeJS1 extends Component {
             />
             <Button
               positive
-              href="https://github.com/andika-andriana/Node-JS---Payment-Web-Integration-Dengan-Paystack"
+              href="https://github.com/andika-andriana/bcak-mini-tracker"
               target="_blank"
               color="black"
               labelPosition="right"
@@ -134,4 +146,4 @@ class NodeJS1 extends Component {
     );
   }
 }
-export default NodeJS1;
+export default ReactNatives2;
