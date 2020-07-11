@@ -6,6 +6,8 @@ import PHPs from "./data/PHPs";
 import ReactNatives from "./data/ReactNatives";
 import ReactJS from "./data/ReactJS";
 import NodeJS2 from "./data/NodeJS2";
+import ReactNatives2 from "./data/ReactNatives2";
+import EmberJS from "./data/EmberJS";
 
 const items = [
   {
@@ -30,7 +32,7 @@ const items = [
     meta: <PHPs />
   },
   {
-    image: "/images/lang/ReactNative.jpeg",
+    image: "/images/lang/ReactNative.png",
     header: "React Native - Mobile Apps Dengan API Zomato",
     description:
       "Mobile Apps restoran yang telah terintegrasi dengan open API yang disediakan Zomato.",
@@ -39,7 +41,7 @@ const items = [
   {
     image: "/images/lang/React.png",
     header:
-      "Website Movies Menggunakan Redux, Axios, Auth0 dan Open API TV Maze.",
+      "React JS - Website Movies Menggunakan Redux, Axios, Auth0 dan Open API TV Maze.",
     description:
       "Website Movie Menggunakan Redux, Axios dengan Open API TV Maze dan juga menggunakan autentikasi login dengan Auth0.",
     meta: <ReactJS />
@@ -52,16 +54,16 @@ const items = [
     meta: <NodeJS2 />
   },
   {
-    image: "/images/lang/GraphQL.png",
-    header: "GraphQL - Database Mahasiswa Dengan Node JS",
-    description: " ",
-    meta: "WORK IN PROGRESS"
+    image: "/images/lang/ReactNative.png",
+    header: "React Native - Mini Tracker Mobile Apps",
+    description: "Real-time Mini Tracker App dengan websocket stompJS, rn-maps dan redux",
+    meta: <ReactNatives2/>
   },
   {
-    image: "/images/lang/Dialogflow.jpg",
-    header: "Telegram - Chatbot Dengan Fatherbot (Node JS) & Dialogflow",
-    description: " ",
-    meta: "WORK IN PROGRESS"
+    image: "/images/lang/EmberJS.png",
+    header: "Ember JS - Simple CRUD WebApp Dengan MVC Framework",
+    description: "My Library Web Based App, Simple CRUD website dengan Ember.js MVC Framework",
+    meta: <EmberJS/>
   }
 ];
 

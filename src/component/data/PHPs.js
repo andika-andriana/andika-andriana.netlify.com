@@ -45,41 +45,6 @@ class PHPs extends Component {
               </p>
               <Divider horizontal style={{ marginTop: 50 }}>
                 <Header as="h4">
-                  <Icon name="cogs" />
-                  Dependencies
-                </Header>
-              </Divider>
-              <Header as="h5">Vendor</Header>
-              <Image src="images/3_wappalyzer.png" />
-              <Header as="h5">Package.json</Header>
-              <List bulleted>
-                <List.Item>"gulp": "^3.9.1"</List.Item>
-                <List.Item>"laravel-elixir": "^5.0.0"</List.Item>
-                <List.Item>"bootstrap-sass": "^3.0.0"</List.Item>
-              </List>
-              <Divider horizontal style={{ marginTop: 50 }}>
-                <Header as="h4">
-                  <Icon name="file archive" />
-                  Installasi
-                </Header>
-              </Divider>
-              <List bulleted>
-                <List.Item>Download atau clone repository</List.Item>
-                <List.Item>Extract folder</List.Item>
-                <List.Item>
-                  Import db_tokoonline.sql pada folder databases kedalam mysql
-                </List.Item>
-                <List.Item>
-                  Di terminal (CMD):&nbsp;
-                  <code>composer install</code>
-                </List.Item>
-                <List.Item>
-                  Kemudian Jalankan project:&nbsp;
-                  <code>php artisan serve</code>
-                </List.Item>
-              </List>
-              <Divider horizontal style={{ marginTop: 50 }}>
-                <Header as="h4">
                   <Icon name="video" />
                   Demo
                 </Header>
@@ -132,6 +97,41 @@ class PHPs extends Component {
                       playing
                     />
                   </List.Content>
+                </List.Item>
+              </List>
+              <Divider horizontal style={{ marginTop: 50 }}>
+                <Header as="h4">
+                  <Icon name="cogs" />
+                  Dependencies
+                </Header>
+              </Divider>
+              <Header as="h5">Vendor</Header>
+              <Image src="images/3_wappalyzer.png" />
+              <Header as="h5">Package.json</Header>
+              <List bulleted>
+                <List.Item>"gulp": "^3.9.1"</List.Item>
+                <List.Item>"laravel-elixir": "^5.0.0"</List.Item>
+                <List.Item>"bootstrap-sass": "^3.0.0"</List.Item>
+              </List>
+              <Divider horizontal style={{ marginTop: 50 }}>
+                <Header as="h4">
+                  <Icon name="file archive" />
+                  Installasi
+                </Header>
+              </Divider>
+              <List bulleted style={{marginBottom:50}}>
+                <List.Item>Download atau clone repository</List.Item>
+                <List.Item>Extract folder</List.Item>
+                <List.Item>
+                  Import db_tokoonline.sql pada folder databases kedalam mysql
+                </List.Item>
+                <List.Item>
+                  Di terminal (CMD):&nbsp;
+                  <code>composer install</code>
+                </List.Item>
+                <List.Item>
+                  Kemudian Jalankan project:&nbsp;
+                  <code>php artisan serve</code>
                 </List.Item>
               </List>
             </Modal.Description>

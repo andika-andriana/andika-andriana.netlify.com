@@ -45,49 +45,6 @@ class Golangs extends Component {
               </p>
               <Divider horizontal style={{ marginTop: 50 }}>
                 <Header as="h4">
-                  <Icon name="cogs" />
-                  Package
-                </Header>
-              </Divider>
-              <Header as="h5">Vendor</Header>
-              <Image src="images/1_wappalyzer.png" />
-              <Header as="h5">Package</Header>
-              <List bulleted>
-                <List.Item>labstack</List.Item>
-                <List.Item>mattn</List.Item>
-                <List.Item>valyala</List.Item>
-                <List.Item>crypto</List.Item>
-                <List.Item>sys</List.Item>
-                <List.Item>go mySQL driver</List.Item>
-              </List>
-              <Divider horizontal style={{ marginTop: 50 }}>
-                <Header as="h4">
-                  <Icon name="file archive" />
-                  Installasi
-                </Header>
-              </Divider>
-              <List bulleted>
-                <List.Item>Download atau Clone Repository.</List.Item>
-                <List.Item>
-                  Extract kedalam folder baru berinama <b>echo</b> →
-                  C:/Go/src/echo/(file download)
-                </List.Item>
-                <List.Item>
-                  Jalankan: <code>go run main.go</code>
-                </List.Item>
-              </List>
-              <Divider horizontal style={{ marginTop: 50 }}>
-                <Header as="h4">
-                  <Icon name="rocket" />
-                  API Routes
-                </Header>
-              </Divider>
-              <Image
-                src="https://raw.githubusercontent.com/andika-andriana/Golang---Food-Web-dengan-Framework-Echo/master/Files/Postman.gif"
-                size="huge"
-              />
-              <Divider horizontal style={{ marginTop: 50 }}>
-                <Header as="h4">
                   <Icon name="video" />
                   Demo
                 </Header>
@@ -138,6 +95,50 @@ class Golangs extends Component {
                   </List.Content>
                 </List.Item>
               </List>
+              <Divider horizontal style={{ marginTop: 50 }}>
+                <Header as="h4">
+                  <Icon name="cogs" />
+                  Package
+                </Header>
+              </Divider>
+              <Header as="h5">Vendor</Header>
+              <Image src="images/1_wappalyzer.png" />
+              <Header as="h5">Package</Header>
+              <List bulleted>
+                <List.Item>labstack</List.Item>
+                <List.Item>mattn</List.Item>
+                <List.Item>valyala</List.Item>
+                <List.Item>crypto</List.Item>
+                <List.Item>sys</List.Item>
+                <List.Item>go mySQL driver</List.Item>
+              </List>
+              <Divider horizontal style={{ marginTop: 50 }}>
+                <Header as="h4">
+                  <Icon name="file archive" />
+                  Installasi
+                </Header>
+              </Divider>
+              <List bulleted>
+                <List.Item>Download atau Clone Repository.</List.Item>
+                <List.Item>
+                  Extract kedalam folder baru berinama <b>echo</b> →
+                  C:/Go/src/echo/(file download)
+                </List.Item>
+                <List.Item>
+                  Jalankan: <code>go run main.go</code>
+                </List.Item>
+              </List>
+              <Divider horizontal style={{ marginTop: 50 }}>
+                <Header as="h4">
+                  <Icon name="rocket" />
+                  API Routes
+                </Header>
+              </Divider>
+              <Image
+                src="https://raw.githubusercontent.com/andika-andriana/Golang---Food-Web-dengan-Framework-Echo/master/Files/Postman.gif"
+                size="huge"
+                style={{marginBottom:50}}
+              />
             </Modal.Description>
           </Modal.Content>
           <Modal.Actions>
