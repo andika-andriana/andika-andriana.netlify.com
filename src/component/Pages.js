@@ -13,7 +13,6 @@ import {
   Dimmer,
   Loader
 } from "semantic-ui-react";
-import "semantic-ui-css/semantic.min.css";
 
 // Pages Component
 import Headers from "./Headers";
@@ -60,7 +59,8 @@ export default class Pages extends Component {
   }
 
   render() {
-    if(this.state.isLoading){
+    let isLoading = this.state.isLoading
+    if(isLoading){
       return(
         <Dimmer active>
           <Loader size='massive'/>
